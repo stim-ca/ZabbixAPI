@@ -24,7 +24,7 @@ GUID = '70f612f3-cb2a-4751-8866-dc25962a41e9'
 Author = 'stim-ca'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+CompanyName = 'Timewell Tech'
 
 # Copyright statement for this module
 Copyright = '(c) 2025 stim-ca. All rights reserved.'
@@ -69,16 +69,16 @@ Description = 'Module to interact with the Zabbix API'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = '*'
+FunctionsToExport = 'Get-HelloWorld'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-CmdletsToExport = '*'
+CmdletsToExport = ''
 
 # Variables to export from this module
-VariablesToExport = '*'
+VariablesToExport = ''
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-AliasesToExport = '*'
+AliasesToExport = ''
 
 # DSC resources to export from this module
 # DscResourcesToExport = @()
@@ -96,19 +96,22 @@ PrivateData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
         # Tags = @()
+        Tags = @('Zabbix', 'API', 'Monitoring')
 
         # A URL to the license for this module.
         # LicenseUri = ''
+        LicenseUri = 'https://opensource.org/licenses/MIT'
 
         # A URL to the main website for this project.
         # ProjectUri = ''
+        ProjectUri = 'https://github.com/stim-ca/ZabbixAPI/tree/main'
 
         # A URL to an icon representing this module.
         # IconUri = ''
 
         # ReleaseNotes of this module
         # ReleaseNotes = ''
-
+        ReleaseNotes = 'https://github.com/stim-ca/ZabbixAPI/releases'
     } # End of PSData hashtable
 
 } # End of PrivateData hashtable
