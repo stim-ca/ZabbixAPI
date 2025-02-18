@@ -9,7 +9,7 @@
 # mkdocs.yml
 
 site_name: Powershell Zabbix API Module
-# site_url:
+site_url: https://stim-ca.github.io
 repo_url: https://github.com/stim-ca/ZabbixAPI
 # repo_name:
 edit_uri: edit/main/docs/
