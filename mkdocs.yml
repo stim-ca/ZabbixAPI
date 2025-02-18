@@ -8,74 +8,118 @@
 # https://squidfunk.github.io/mkdocs-material/creating-your-site/
 # mkdocs.yml
 
-site_name: ZabbixAPI
+site_name: Powershell Zabbix API Module
 # site_url:
-# repo_url:
+repo_url: https://github.com/stim-ca/ZabbixAPI
 # repo_name:
-# edit_uri: edit/main/docs/
+edit_uri: edit/main/docs/
 # edit_uri_template:
-site_description: Module to interact with the Zabbix API # meta tag to the generated HTML header
-site_author: stim-ca # meta tag to the generated HTML header
-# copyright:
-# remote_branch:
-# remote_name:
-# docs_dir: docs
-# site_dir:
-# extra_css:
-# extra_javascript:
-# markdown_extensions:
-  # Python Markdown
-  # - admonition
-  # - toc:
-  #     permalink: true
-  # code highlighting
-  # - pymdownx.highlight:
-  #     use_pygments: true
-  # - pymdownx.highlight:
-  #     anchor_linenums: true
-  # - pymdownx.inlinehilite
-  # - pymdownx.snippets
-  # - pymdownx.superfences
+site_description: Module to interact with the Zabbix API
+site_author: stim-ca
+copyright: Copyright &copy; 2021 - 2025 stim-ca
+remote_branch: origin
+remote_name: gh-pages
+docs_dir: docs
 
-# extra_templates:
-# extra:
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
 theme:
   name: material
-  # language: en
-  # custom_dir: overrides
-  features:
-    # - navigation.tabs
-    # - navigation.tabs.sticky
-    # - navigation.path
-  # favicon:
-  # icon:
-  #   repo:
-  # font:
-  #   text: Work Sans
-  # logo:
-  # palette:
-  #   primary: teal
-  # palette:
-  #   # Palette toggle for light mode
-  #   - media: "(prefers-color-scheme: light)"
-  #     scheme: default
-  #     primary: light blue
-  #     accent: pink
-  #     toggle:
-  #       icon: material/brightness-7
-  #       name: Switch to dark mode
+  palette:
 
-    # # Palette toggle for dark mode
-    # - media: "(prefers-color-scheme: dark)"
-    #   scheme: slate
-    #   primary: indigo
-    #   accent: pink
-    #   toggle:
-    #     icon: material/brightness-4
-    #     name: Switch to light mode
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: teal
+
+
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - header.autohide
+    - navigation.footer
+    - content.action.edit
+
+plugins:
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+
+  - search:
+
+  - social:
+      enabled: true
+      cards: true
+      cards_dir: assets/images/social
+
+
+  - privacy:
+      enabled: true
+      cache: true
+      assets: false
+      assets_fetch: false
+
 nav:
   - Home: index.md
   - Change Log: CHANGELOG.md
-  # - Functions:
-  #   - Function1: functions/function1.md
 
