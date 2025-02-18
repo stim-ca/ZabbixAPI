@@ -17,7 +17,7 @@ edit_uri: edit/main/docs/
 site_description: Module to interact with the Zabbix API
 site_author: stim-ca
 copyright: Copyright &copy; 2021 - 2025 stim-ca
-remote_branch: origin\gh-pages
+remote_branch: origin/gh-pages
 remote_name: gh-pages
 docs_dir: docs
 
